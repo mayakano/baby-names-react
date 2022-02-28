@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { NamePicker } from "./components/name-picker";
+import { Search } from "./components/search";
 
-function App() {
-  return <div className="App"></div>;
+function App({ names }) {
+  return (
+    <>
+      <Search />
+
+      <NamePicker names={names} />
+    </>
+  );
 }
 
 export default App;
